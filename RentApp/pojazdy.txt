@@ -1,0 +1,8 @@
+Samochod BMW 2015 315 5 AWD 0
+Motocykl Yamaha 2019 115 Naked 0
+Motocykl Kawasaki 2023 215 Sport 1
+Samochod Audi 2015 415 5 AWD 0
+Motocykl BMW 2023 175 Turist 1
+Motocykl Yamaha 2022 215 Sport 1
+Samochod Mercedes 2007 165 3 RWD 0
+Samochod Mazda 2000 135 5 AWD 0

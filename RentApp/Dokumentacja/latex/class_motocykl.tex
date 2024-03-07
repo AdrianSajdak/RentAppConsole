@@ -1,0 +1,170 @@
+\doxysection{Dokumentacja klasy Motocykl}
+\hypertarget{class_motocykl}{}\label{class_motocykl}\index{Motocykl@{Motocykl}}
+
+
+Klasa reprezentujπca motocykl, dziedziczπca po klasie \doxylink{class_pojazd}{Pojazd}.  
+
+
+
+
+{\ttfamily \#include $<$motocykl.\+h$>$}
+
+Diagram dziedziczenia dla Motocykl\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_motocykl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_motocykl_a4c1b4089417492657e28262a0f1fc6e7}\label{class_motocykl_a4c1b4089417492657e28262a0f1fc6e7} 
+{\bfseries Motocykl} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyúlny klasy \doxylink{class_motocykl}{Motocykl}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_motocykl_aeeda58d967b5ba1204776df9329fc4b2}{Motocykl}} (std\+::string \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}}, int \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rok\+Produkcji}}, int \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}}, std\+::string rodzaj)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxylink{class_motocykl}{Motocykl} inicjalizujπcy obiekt okreúlonymi wartoúciami. \end{DoxyCompactList}\item 
+\Hypertarget{class_motocykl_ae85aa4f3a28cc045363fe104c22429b6}\label{class_motocykl_ae85aa4f3a28cc045363fe104c22429b6} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Motocykl} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_motocykl}{Motocykl}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motocykl_a2aa98acdbbae7c5ddad0a509a474f29b}{Wypisz\+Informacje}} () const override
+\begin{DoxyCompactList}\small\item\em Metoda wypisujπca informacje o motocyklu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_motocykl_a3fe51eb215691422240d1de76ea4fe68}{Pobierz\+Rodzaj}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobierajπca rodzaj motocykla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motocykl_a25f2cfc5d37e97a92c8aa20a8ee50f17}{Zapisz\+Do\+Pliku\+Txt}} (std\+::ofstream \&plik) const override
+\begin{DoxyCompactList}\small\item\em Metoda zapisujπca dane motocykla do pliku tekstowego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motocykl_ac052b8adf210fe6c8c7f858f8c06a9ff}{Odczytaj\+ZPliku\+Txt}} (std\+::ifstream \&plik) override
+\begin{DoxyCompactList}\small\item\em Metoda odczytujπca dane motocykla z pliku tekstowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Metody publiczne dziedziczone z \mbox{\hyperlink{class_pojazd}{Pojazd}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pojazd} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyúlny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pojazd_a015e4dfc8b8deee3c1ee3bfbacc0bcb1}{Pojazd}} (std\+::string \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}}, int \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rok\+Produkcji}}, int \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}}, std\+::string typ="{}"{})
+\begin{DoxyCompactList}\small\item\em Konstruktor z parametrami. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Pojazd} ()
+\begin{DoxyCompactList}\small\item\em Destruktor pojazdu. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_pojazd_a1ec127fafffe35d4ac40374aa24fdcfa}{Pobierz\+Marke}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobierajπca markÍ pojazdu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pojazd_abc9c9b2500f6b4928ea10355480e31fa}{Pobierz\+Rok\+Produkcji}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobierajπca rok produkcji pojazdu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pojazd_acfb1f55b071ff98e65975f6f2140e134}{Pobierz\+Moc}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobierajπca moc pojazdu. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_pojazd_a41b43dc5776a69556bc795aebea28b68}{Pobierz\+Typ}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobierajπca typ pojazdu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Dodatkowe Dziedziczone Sk≈Çadowe}
+\doxysubsection*{Atrybuty publiczne dziedziczone z \mbox{\hyperlink{class_pojazd}{Pojazd}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries czy\+Zarezerwowany} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione dziedziczone z \mbox{\hyperlink{class_pojazd}{Pojazd}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}}
+\item 
+int \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rok\+Produkcji}}
+\item 
+int \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}}
+\item 
+std\+::string {\bfseries typ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczeg√≥≈Çowy}
+Klasa reprezentujπca motocykl, dziedziczπca po klasie \doxylink{class_pojazd}{Pojazd}. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_motocykl_aeeda58d967b5ba1204776df9329fc4b2}\label{class_motocykl_aeeda58d967b5ba1204776df9329fc4b2} 
+\index{Motocykl@{Motocykl}!Motocykl@{Motocykl}}
+\index{Motocykl@{Motocykl}!Motocykl@{Motocykl}}
+\doxysubsubsection{\texorpdfstring{Motocykl()}{Motocykl()}}
+{\footnotesize\ttfamily Motocykl\+::\+Motocykl (\begin{DoxyParamCaption}\item[{std\+::string}]{marka,  }\item[{int}]{rok\+Produkcji,  }\item[{int}]{moc,  }\item[{std\+::string}]{rodzaj }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \doxylink{class_motocykl}{Motocykl} inicjalizujπcy obiekt okreúlonymi wartoúciami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em marka} & Marka motocykla. \\
+\hline
+{\em rok\+Produkcji} & Rok produkcji motocykla. \\
+\hline
+{\em moc} & Moc motocykla. \\
+\hline
+{\em rodzaj} & Rodzaj motocykla. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji sk≈Çadowych}
+\Hypertarget{class_motocykl_ac052b8adf210fe6c8c7f858f8c06a9ff}\label{class_motocykl_ac052b8adf210fe6c8c7f858f8c06a9ff} 
+\index{Motocykl@{Motocykl}!OdczytajZPlikuTxt@{OdczytajZPlikuTxt}}
+\index{OdczytajZPlikuTxt@{OdczytajZPlikuTxt}!Motocykl@{Motocykl}}
+\doxysubsubsection{\texorpdfstring{OdczytajZPlikuTxt()}{OdczytajZPlikuTxt()}}
+{\footnotesize\ttfamily void Motocykl\+::\+Odczytaj\+ZPliku\+Txt (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{plik }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda odczytujπca dane motocykla z pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plik} & StrumieÒ wejúciowy z pliku. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{class_pojazd_a1ed30addff3eb710343ae2194b95520f}{Pojazd}}.
+
+\Hypertarget{class_motocykl_a3fe51eb215691422240d1de76ea4fe68}\label{class_motocykl_a3fe51eb215691422240d1de76ea4fe68} 
+\index{Motocykl@{Motocykl}!PobierzRodzaj@{PobierzRodzaj}}
+\index{PobierzRodzaj@{PobierzRodzaj}!Motocykl@{Motocykl}}
+\doxysubsubsection{\texorpdfstring{PobierzRodzaj()}{PobierzRodzaj()}}
+{\footnotesize\ttfamily std\+::string Motocykl\+::\+Pobierz\+Rodzaj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda pobierajπca rodzaj motocykla. 
+
+\begin{DoxyReturn}{Zwraca}
+Rodzaj motocykla. 
+\end{DoxyReturn}
+\Hypertarget{class_motocykl_a2aa98acdbbae7c5ddad0a509a474f29b}\label{class_motocykl_a2aa98acdbbae7c5ddad0a509a474f29b} 
+\index{Motocykl@{Motocykl}!WypiszInformacje@{WypiszInformacje}}
+\index{WypiszInformacje@{WypiszInformacje}!Motocykl@{Motocykl}}
+\doxysubsubsection{\texorpdfstring{WypiszInformacje()}{WypiszInformacje()}}
+{\footnotesize\ttfamily void Motocykl\+::\+Wypisz\+Informacje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda wypisujπca informacje o motocyklu. 
+
+
+
+Reimplementowana z \mbox{\hyperlink{class_pojazd_a895de55ac0a0ca3ddcd687337e4ecaa7}{Pojazd}}.
+
+\Hypertarget{class_motocykl_a25f2cfc5d37e97a92c8aa20a8ee50f17}\label{class_motocykl_a25f2cfc5d37e97a92c8aa20a8ee50f17} 
+\index{Motocykl@{Motocykl}!ZapiszDoPlikuTxt@{ZapiszDoPlikuTxt}}
+\index{ZapiszDoPlikuTxt@{ZapiszDoPlikuTxt}!Motocykl@{Motocykl}}
+\doxysubsubsection{\texorpdfstring{ZapiszDoPlikuTxt()}{ZapiszDoPlikuTxt()}}
+{\footnotesize\ttfamily void Motocykl\+::\+Zapisz\+Do\+Pliku\+Txt (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{plik }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Metoda zapisujπca dane motocykla do pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plik} & StrumieÒ wyjúciowy do pliku. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana z \mbox{\hyperlink{class_pojazd_ab07ec7e3fb82e98200800820bef73903}{Pojazd}}.
+
+
+
+Dokumentacja dla tej klasy zosta≈Ça wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{motocykl_8h}{motocykl.\+h}}\end{DoxyCompactItemize}

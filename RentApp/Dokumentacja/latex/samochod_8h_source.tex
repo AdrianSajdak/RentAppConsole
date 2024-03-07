@@ -1,0 +1,29 @@
+\doxysection{samochod.\+h}
+\hypertarget{samochod_8h_source}{}\label{samochod_8h_source}\mbox{\hyperlink{samochod_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ SAMOCHOD\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ SAMOCHOD\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pojazd_8h}{Pojazd.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_samochod}{Samochod}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_pojazd}{Pojazd}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_samochod_a56ae27a3e568333f010604249d463c96}{Samochod}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_samochod_a69898205923cc7b3d51a6ec668898c82}{Samochod}}(std::string\ \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rokProdukcji}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}},\ \textcolor{keywordtype}{int}\ liczbaDrzwi,\ std::string\ naped);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_samochod_a57e4a935d18967604f6304f6ec9c3c92}{\string~Samochod}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_samochod_a238b03348c2e4e1d755dbae67e91eca4}{WypiszInformacje}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_samochod_a00527651c32cab0e744a20ac3f370a6f}{PobierzLiczbeDrzwi}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ \mbox{\hyperlink{class_samochod_aabed65db8d54e38e8f114695ce123ffb}{PobierzNaped}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_samochod_a3767c4a384f733e02153abba37b3e957}{ZapiszDoPlikuTxt}}(std::ofstream\&\ plik)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_samochod_a0490160d3937b6ad7f2ba0cd46695833}{OdczytajZPlikuTxt}}(std::ifstream\&\ plik)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ liczbaDrzwi;}
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ naped;}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SAMOCHOD\_H}}
+
+\end{DoxyCode}

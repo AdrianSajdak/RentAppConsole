@@ -1,0 +1,220 @@
+\doxysection{Dokumentacja klasy Pojazd}
+\hypertarget{class_pojazd}{}\label{class_pojazd}\index{Pojazd@{Pojazd}}
+
+
+Klasa reprezentuj¹ca ogólny pojazd.  
+
+
+
+
+{\ttfamily \#include $<$pojazd.\+h$>$}
+
+Diagram dziedziczenia dla Pojazd\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pojazd}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pojazd_adadab8f8cbb436d300d788314781a420}\label{class_pojazd_adadab8f8cbb436d300d788314781a420} 
+{\bfseries Pojazd} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyœlny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pojazd_a015e4dfc8b8deee3c1ee3bfbacc0bcb1}{Pojazd}} (std\+::string \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}}, int \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rok\+Produkcji}}, int \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}}, std\+::string typ="{}"{})
+\begin{DoxyCompactList}\small\item\em Konstruktor z parametrami. \end{DoxyCompactList}\item 
+\Hypertarget{class_pojazd_af9c263d9faf571e643fccb2d3dca92c6}\label{class_pojazd_af9c263d9faf571e643fccb2d3dca92c6} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Pojazd} ()
+\begin{DoxyCompactList}\small\item\em Destruktor pojazdu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pojazd_a895de55ac0a0ca3ddcd687337e4ecaa7}{Wypisz\+Informacje}} () const
+\begin{DoxyCompactList}\small\item\em Metoda wypisuj¹ca informacje o pojeŸdzie. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_pojazd_a1ec127fafffe35d4ac40374aa24fdcfa}{Pobierz\+Marke}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobieraj¹ca markê pojazdu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pojazd_abc9c9b2500f6b4928ea10355480e31fa}{Pobierz\+Rok\+Produkcji}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobieraj¹ca rok produkcji pojazdu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_pojazd_acfb1f55b071ff98e65975f6f2140e134}{Pobierz\+Moc}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobieraj¹ca moc pojazdu. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_pojazd_a41b43dc5776a69556bc795aebea28b68}{Pobierz\+Typ}} () const
+\begin{DoxyCompactList}\small\item\em Metoda pobieraj¹ca typ pojazdu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pojazd_ab07ec7e3fb82e98200800820bef73903}{Zapisz\+Do\+Pliku\+Txt}} (std\+::ofstream \&plik) const
+\begin{DoxyCompactList}\small\item\em Metoda zapisuj¹ca dane pojazdu do pliku tekstowego. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_pojazd_a1ed30addff3eb710343ae2194b95520f}{Odczytaj\+ZPliku\+Txt}} (std\+::ifstream \&plik)
+\begin{DoxyCompactList}\small\item\em Metoda odczytuj¹ca dane pojazdu z pliku tekstowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pojazd_a5a34d0ca67ee409ef37298bdf590aca2}\label{class_pojazd_a5a34d0ca67ee409ef37298bdf590aca2} 
+bool {\bfseries czy\+Zarezerwowany} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}}
+\item 
+int \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rok\+Produkcji}}
+\item 
+int \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}}
+\item 
+\Hypertarget{class_pojazd_a0f1404842ac35879dda5a8dac866dfcd}\label{class_pojazd_a0f1404842ac35879dda5a8dac866dfcd} 
+std\+::string {\bfseries typ}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegÃ³Å‚owy}
+Klasa reprezentuj¹ca ogólny pojazd. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_pojazd_a015e4dfc8b8deee3c1ee3bfbacc0bcb1}\label{class_pojazd_a015e4dfc8b8deee3c1ee3bfbacc0bcb1} 
+\index{Pojazd@{Pojazd}!Pojazd@{Pojazd}}
+\index{Pojazd@{Pojazd}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{Pojazd()}{Pojazd()}}
+{\footnotesize\ttfamily Pojazd\+::\+Pojazd (\begin{DoxyParamCaption}\item[{std\+::string}]{marka,  }\item[{int}]{rok\+Produkcji,  }\item[{int}]{moc,  }\item[{std\+::string}]{typ = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+
+
+Konstruktor z parametrami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em marka} & Marka pojazdu \\
+\hline
+{\em rok\+Produkcji} & Rok produkcji pojazdu \\
+\hline
+{\em moc} & Moc pojazdu \\
+\hline
+{\em typ} & Typ pojazdu \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji skÅ‚adowych}
+\Hypertarget{class_pojazd_a1ed30addff3eb710343ae2194b95520f}\label{class_pojazd_a1ed30addff3eb710343ae2194b95520f} 
+\index{Pojazd@{Pojazd}!OdczytajZPlikuTxt@{OdczytajZPlikuTxt}}
+\index{OdczytajZPlikuTxt@{OdczytajZPlikuTxt}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{OdczytajZPlikuTxt()}{OdczytajZPlikuTxt()}}
+{\footnotesize\ttfamily virtual void Pojazd\+::\+Odczytaj\+ZPliku\+Txt (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{plik }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda odczytuj¹ca dane pojazdu z pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plik} & Strumieñ wejœciowy z pliku. Zmienna sprawdzaj¹ca czy pojazd jest zarezerwowany \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana w \mbox{\hyperlink{class_motocykl_ac052b8adf210fe6c8c7f858f8c06a9ff}{Motocykl}} i \mbox{\hyperlink{class_samochod_a0490160d3937b6ad7f2ba0cd46695833}{Samochod}}.
+
+\Hypertarget{class_pojazd_a1ec127fafffe35d4ac40374aa24fdcfa}\label{class_pojazd_a1ec127fafffe35d4ac40374aa24fdcfa} 
+\index{Pojazd@{Pojazd}!PobierzMarke@{PobierzMarke}}
+\index{PobierzMarke@{PobierzMarke}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{PobierzMarke()}{PobierzMarke()}}
+{\footnotesize\ttfamily const std\+::string \& Pojazd\+::\+Pobierz\+Marke (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda pobieraj¹ca markê pojazdu. 
+
+\begin{DoxyReturn}{Zwraca}
+Marka pojazdu 
+\end{DoxyReturn}
+\Hypertarget{class_pojazd_acfb1f55b071ff98e65975f6f2140e134}\label{class_pojazd_acfb1f55b071ff98e65975f6f2140e134} 
+\index{Pojazd@{Pojazd}!PobierzMoc@{PobierzMoc}}
+\index{PobierzMoc@{PobierzMoc}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{PobierzMoc()}{PobierzMoc()}}
+{\footnotesize\ttfamily int Pojazd\+::\+Pobierz\+Moc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda pobieraj¹ca moc pojazdu. 
+
+\begin{DoxyReturn}{Zwraca}
+Moc pojazdu 
+\end{DoxyReturn}
+\Hypertarget{class_pojazd_abc9c9b2500f6b4928ea10355480e31fa}\label{class_pojazd_abc9c9b2500f6b4928ea10355480e31fa} 
+\index{Pojazd@{Pojazd}!PobierzRokProdukcji@{PobierzRokProdukcji}}
+\index{PobierzRokProdukcji@{PobierzRokProdukcji}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{PobierzRokProdukcji()}{PobierzRokProdukcji()}}
+{\footnotesize\ttfamily int Pojazd\+::\+Pobierz\+Rok\+Produkcji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda pobieraj¹ca rok produkcji pojazdu. 
+
+\begin{DoxyReturn}{Zwraca}
+Rok produkcji pojazdu 
+\end{DoxyReturn}
+\Hypertarget{class_pojazd_a41b43dc5776a69556bc795aebea28b68}\label{class_pojazd_a41b43dc5776a69556bc795aebea28b68} 
+\index{Pojazd@{Pojazd}!PobierzTyp@{PobierzTyp}}
+\index{PobierzTyp@{PobierzTyp}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{PobierzTyp()}{PobierzTyp()}}
+{\footnotesize\ttfamily const std\+::string \& Pojazd\+::\+Pobierz\+Typ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda pobieraj¹ca typ pojazdu. 
+
+\begin{DoxyReturn}{Zwraca}
+Typ pojazdu 
+\end{DoxyReturn}
+\Hypertarget{class_pojazd_a895de55ac0a0ca3ddcd687337e4ecaa7}\label{class_pojazd_a895de55ac0a0ca3ddcd687337e4ecaa7} 
+\index{Pojazd@{Pojazd}!WypiszInformacje@{WypiszInformacje}}
+\index{WypiszInformacje@{WypiszInformacje}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{WypiszInformacje()}{WypiszInformacje()}}
+{\footnotesize\ttfamily virtual void Pojazd\+::\+Wypisz\+Informacje (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda wypisuj¹ca informacje o pojeŸdzie. 
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_motocykl_a2aa98acdbbae7c5ddad0a509a474f29b}{Motocykl}} i \mbox{\hyperlink{class_samochod_a238b03348c2e4e1d755dbae67e91eca4}{Samochod}}.
+
+\Hypertarget{class_pojazd_ab07ec7e3fb82e98200800820bef73903}\label{class_pojazd_ab07ec7e3fb82e98200800820bef73903} 
+\index{Pojazd@{Pojazd}!ZapiszDoPlikuTxt@{ZapiszDoPlikuTxt}}
+\index{ZapiszDoPlikuTxt@{ZapiszDoPlikuTxt}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{ZapiszDoPlikuTxt()}{ZapiszDoPlikuTxt()}}
+{\footnotesize\ttfamily virtual void Pojazd\+::\+Zapisz\+Do\+Pliku\+Txt (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{plik }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Metoda zapisuj¹ca dane pojazdu do pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plik} & Strumieñ wyjœciowy do pliku. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplementowana w \mbox{\hyperlink{class_motocykl_a25f2cfc5d37e97a92c8aa20a8ee50f17}{Motocykl}} i \mbox{\hyperlink{class_samochod_a3767c4a384f733e02153abba37b3e957}{Samochod}}.
+
+
+
+\doxysubsection{Dokumentacja atrybutÃ³w skÅ‚adowych}
+\Hypertarget{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}\label{class_pojazd_a9fc9856047fb6e4114c1b317834e8773} 
+\index{Pojazd@{Pojazd}!marka@{marka}}
+\index{marka@{marka}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{marka}{marka}}
+{\footnotesize\ttfamily std\+::string Pojazd\+::marka\hspace{0.3cm}{\ttfamily [protected]}}
+
+\texorpdfstring{$<$}{<} Marka pojazdu Rok produkcji pojazdu \Hypertarget{class_pojazd_aff481089929e686ba3d6f7c37f46905c}\label{class_pojazd_aff481089929e686ba3d6f7c37f46905c} 
+\index{Pojazd@{Pojazd}!moc@{moc}}
+\index{moc@{moc}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{moc}{moc}}
+{\footnotesize\ttfamily int Pojazd\+::moc\hspace{0.3cm}{\ttfamily [protected]}}
+
+Typ pojazdu \Hypertarget{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}\label{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5} 
+\index{Pojazd@{Pojazd}!rokProdukcji@{rokProdukcji}}
+\index{rokProdukcji@{rokProdukcji}!Pojazd@{Pojazd}}
+\doxysubsubsection{\texorpdfstring{rokProdukcji}{rokProdukcji}}
+{\footnotesize\ttfamily int Pojazd\+::rok\+Produkcji\hspace{0.3cm}{\ttfamily [protected]}}
+
+Moc pojazdu 
+
+Dokumentacja dla tej klasy zostaÅ‚a wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pojazd_8h}{pojazd.\+h}}\end{DoxyCompactItemize}

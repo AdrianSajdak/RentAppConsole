@@ -1,0 +1,28 @@
+\doxysection{motocykl.\+h}
+\hypertarget{motocykl_8h_source}{}\label{motocykl_8h_source}\mbox{\hyperlink{motocykl_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ MOTOCYKL\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ MOTOCYKL\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pojazd_8h}{Pojazd.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_motocykl}{Motocykl}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_pojazd}{Pojazd}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_motocykl_a4c1b4089417492657e28262a0f1fc6e7}{Motocykl}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_motocykl_aeeda58d967b5ba1204776df9329fc4b2}{Motocykl}}(std::string\ \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rokProdukcji}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}},\ std::string\ rodzaj);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_motocykl_ae85aa4f3a28cc045363fe104c22429b6}{\string~Motocykl}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_motocykl_a2aa98acdbbae7c5ddad0a509a474f29b}{WypiszInformacje}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00041\ \ \ \ \ std::string\ \mbox{\hyperlink{class_motocykl_a3fe51eb215691422240d1de76ea4fe68}{PobierzRodzaj}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_motocykl_a25f2cfc5d37e97a92c8aa20a8ee50f17}{ZapiszDoPlikuTxt}}(std::ofstream\&\ plik)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_motocykl_ac052b8adf210fe6c8c7f858f8c06a9ff}{OdczytajZPlikuTxt}}(std::ifstream\&\ plik)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ std::string\ rodzaj;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MOTOCYKL\_H}}
+
+\end{DoxyCode}

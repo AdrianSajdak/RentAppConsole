@@ -1,0 +1,35 @@
+\doxysection{pojazd.\+h}
+\hypertarget{pojazd_8h_source}{}\label{pojazd_8h_source}\mbox{\hyperlink{pojazd_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ POJAZD\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ POJAZD\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pojazd}{Pojazd}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_pojazd_adadab8f8cbb436d300d788314781a420}{Pojazd}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_pojazd_a015e4dfc8b8deee3c1ee3bfbacc0bcb1}{Pojazd}}(std::string\ \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rokProdukcji}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}},\ std::string\ typ\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_pojazd_af9c263d9faf571e643fccb2d3dca92c6}{\string~Pojazd}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pojazd_a895de55ac0a0ca3ddcd687337e4ecaa7}{WypiszInformacje}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_pojazd_a1ec127fafffe35d4ac40374aa24fdcfa}{PobierzMarke}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_abc9c9b2500f6b4928ea10355480e31fa}{PobierzRokProdukcji}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_acfb1f55b071ff98e65975f6f2140e134}{PobierzMoc}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_pojazd_a41b43dc5776a69556bc795aebea28b68}{PobierzTyp}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pojazd_ab07ec7e3fb82e98200800820bef73903}{ZapiszDoPlikuTxt}}(std::ofstream\&\ plik)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pojazd_a1ed30addff3eb710343ae2194b95520f}{OdczytajZPlikuTxt}}(std::ifstream\&\ plik);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{bool}\ czyZarezerwowany\ =\ 0;}
+\DoxyCodeLine{00072\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00074\ \ \ \ \ std::string\ \mbox{\hyperlink{class_pojazd_a9fc9856047fb6e4114c1b317834e8773}{marka}};}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_a0c9713b4b2ca7c6298ea5bd7beed0df5}{rokProdukcji}};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pojazd_aff481089929e686ba3d6f7c37f46905c}{moc}};}
+\DoxyCodeLine{00080\ \ \ \ \ std::string\ typ;}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POJAZD\_H}}
+\DoxyCodeLine{00084\ }
+
+\end{DoxyCode}
